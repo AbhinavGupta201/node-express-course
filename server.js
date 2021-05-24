@@ -43,6 +43,9 @@ app.post("/login", function (req, res) {
   }
 });
 
+app.get('/hello', ( req,res)=>{
+    res.send("hi !!!!");
+})
 app.listen(8000, function () {
   console.log("server is running");
 });
